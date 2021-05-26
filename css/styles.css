@@ -104,6 +104,10 @@ nav a.active {
     display: inline-flex;
 }
 
+.menu__item--grey-color {
+    color:var(--grey-color) ;
+}
+
 .menu__item:not(:last-child) {
     margin-right: 50px;
 }
@@ -361,9 +365,7 @@ header {
     color:var(--black-color);
     padding-bottom: 10px ;
 }
-.menu__item--grey-color {
-    color:var(--grey-color) ;
-}
+
 footer {
     padding: 60px 0px; 
 }
@@ -725,11 +727,12 @@ footer {
     height: 30px;
     
   }
-.btn-close-cross {
+  .btn-close-cross {
     width: 11px;
     height: 11px;
+    background-image: url(../img/icons/crossX.svg);
+    fill: #212121;
 }
-
 .modal-btn-close:focus  {
     background-image: url(../img/icons/cross.svg);
     background-size: contain;
@@ -837,6 +840,7 @@ footer {
 
 .form-comment:focus {
     outline: none; 
+    color: #212121;
     border: 1px solid var(--object-color);
     transition-duration: 250ms;
     transition-property:  border; 
@@ -899,7 +903,7 @@ footer {
     border-color: transparent;
     background-size: contain;
     background-origin: border-box; 
-    background-image: url(/img/icons/icon-check.svg);
+    background-image: url(../img/icons/icon-check.svg);
     transition-property: border ; 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
