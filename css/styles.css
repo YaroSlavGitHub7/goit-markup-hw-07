@@ -352,9 +352,9 @@ header {
     color:var(--grey-color);
    }
 
- .team-item-info {
+ .team__item--padding {
      padding-top: 30px ;
-     padding-bottom: 16px ;
+     padding-bottom: 30px ;
  }  
 .team-name {
     font-size: 16px;
@@ -363,7 +363,11 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--black-color);
-    padding-bottom: 10px ;
+   
+}
+.team__name--profession {
+     margin-top: 10px;
+     margin-bottom: 16px;
 }
 
 footer {
@@ -518,9 +522,7 @@ footer {
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
-.social-icons-team {
-    padding-bottom: 30px;
-}
+
 .social-icons-svg {
     width: 20px;
     height: 20px;
@@ -715,24 +717,24 @@ footer {
     pointer-events: none;
   }
 
-  .modal-btn-close {
+.modal-btn-close {
     cursor: pointer;
     position: absolute;
-    top: 8px;
-    right: 8px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background: #FFFFFF;
     width: 30px;
     height: 30px;
-    
-  }
-  .btn-close-cross {
+    right: 8px;
+    top: 8px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+  
+.btn-close-cross {
     width: 11px;
     height: 11px;
     background-image: url(../img/icons/crossX.svg);
-    fill: #212121;
 }
+.modal-btn-close:hover,
 .modal-btn-close:focus  {
     background-image: url(../img/icons/cross.svg);
     background-size: contain;
@@ -743,14 +745,15 @@ footer {
     transition-property:  background-image; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  }
-  .modal-btn-close:focus .btn-close-cross {
+.modal-btn-close:hover .btn-close-cross,
+.modal-btn-close:focus .btn-close-cross  {
     opacity: 0;
     visibility: hidden;
     transition-duration: 250ms;
     transition-property: opacity,  visibility; 
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-  }
+}
 .modal-title {
     margin-bottom: 12px;
     font-weight: bold;
