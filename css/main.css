@@ -1,0 +1,9 @@
+body {
+  background-color: green;
+}
+
+.modal-form__button:hover,
+.modal-form__button:focus {
+  background: #188CE8;
+}
+/*# sourceMappingURL=main.css.map */
