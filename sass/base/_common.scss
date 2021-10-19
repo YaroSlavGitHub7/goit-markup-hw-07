@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background: var(--brand-color);
+  color: var(--black-color);
+  font-family: var(--main-font);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+nav a.menu__link--active {
+  color: var(--object-color);
+}
