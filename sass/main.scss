@@ -1,8 +1,4 @@
-$color: green;
-body {
-    background-color:$color;
-}
-.modal-form__button:hover,
-.modal-form__button:focus {
-    background: #188CE8;
+@import "./base/variables";
+.btn {
+  color: red;
 }
