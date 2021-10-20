@@ -131,14 +131,18 @@ nav a.menu__link--active {
   display: none;
 }
 
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.works__title,
+.team__title,
+.client__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
+/*@import "./components/card-set";*/
+/*не работает*/
 .logo {
   display: inline-block;
 }
@@ -399,9 +403,6 @@ nav a.menu__link--active {
   text-align: center;
 }
 
-/* hero  */
-/*features*/
-/*works*/
 .section--team {
   background: #f5f4fa;
 }
@@ -419,15 +420,6 @@ nav a.menu__link--active {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   width: 270px;
-}
-
-.works__title,
-.team__title {
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .team__members {
@@ -457,7 +449,50 @@ nav a.menu__link--active {
   margin-bottom: 16px;
 }
 
-/* portfolio*/
+.client__icons {
+  display: block;
+}
+
+.client__item {
+  width: 170px;
+  height: 92px;
+}
+
+.client__icons :not(:last-child) {
+  margin-right: 30px;
+}
+
+.client__link {
+  border: 1px solid #afb1b8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  fill: #afb1b8;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-property: fill, border-color;
+  transition-property: fill, border-color;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client__link:hover,
+.client__link:focus {
+  fill: var(--object-color);
+  border-color: var(--object-color);
+}
+
 .menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -611,6 +646,20 @@ nav a.menu__link--active {
   border: 1px solid #eeeeee;
 }
 
+/* hero  */
+/*features*/
+/*works*/
+/*team*/
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* без цього кліенти шикуються в колонку*/
+/* portfolio*/
 .socialicons {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -673,66 +722,7 @@ nav a.menu__link--active {
   margin-right: 10px;
 }
 
-.client__title {
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-.client__icons {
-  display: block;
-}
-
-.client__item {
-  width: 170px;
-  height: 92px;
-}
-
-.client__icons :not(:last-child) {
-  margin-right: 30px;
-}
-
-.client__link {
-  border: 1px solid #afb1b8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  fill: #afb1b8;
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
-  -webkit-transition-property: fill, border-color;
-  transition-property: fill, border-color;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.client__link:hover,
-.client__link:focus {
-  fill: var(--object-color);
-  border-color: var(--object-color);
-}
-
+/*client*/
 footer {
   padding: 60px 0px;
 }

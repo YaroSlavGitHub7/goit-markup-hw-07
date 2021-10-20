@@ -96,6 +96,22 @@ button {
 .title-invisible {
   display: none;
 }
+.works__title,
+.team__title,
+.client__title {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* .title-section {
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+} */
 .link:hover,
 .link:focus {
   color: var(--object-color);
@@ -323,14 +339,6 @@ header {
   width: 270px;
 }
 
-.works__title,
-.team__title {
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-bottom: 50px;
-}
 .team__members {
   font-size: 16px;
   line-height: 1.17;
@@ -515,13 +523,13 @@ header {
   margin-right: 10px;
 }
 
-.client__title {
+/* .client__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
+} */
 
 .client__icons {
   display: block;
