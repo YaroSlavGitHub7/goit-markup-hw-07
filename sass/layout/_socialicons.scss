@@ -10,17 +10,13 @@
   transition-duration: 250ms;
   transition-property: fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .social-icons__link:hover &,
+  .social-icons__link:focus & {
+    fill: var(--brand-color);
+  }
 }
 .socialicons__svg--color {
   fill: rgba(175, 177, 184, 1);
-}
-.social-icons__link:hover .socialicons__svg,
-.social-icons__link:focus .socialicons__svg {
-  fill: var(--brand-color);
-}
-.social-icons__link:hover,
-.social-icons__link:focus {
-  background-color: var(--object-color);
 }
 
 .social-icons__link {
@@ -33,8 +29,11 @@
   transition-duration: 250ms;
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--object-color);
+  }
 }
-
 .socialicons--item:not(:last-child) {
   margin-right: 10px;
 }

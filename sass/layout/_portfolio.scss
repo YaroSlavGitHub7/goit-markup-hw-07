@@ -22,18 +22,15 @@
   transition-duration: 250ms;
   transition-property: color, background-color, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--object-color);
+    color: var(--white-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
 }
-
-.portfolio__button:hover,
-.portfolio__button:focus {
-  background: var(--object-color);
-  color: var(--white-color);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
-
 .button--alwaysBlue {
-  /* кнопка синяя всегда*/
   color: var(--white-color);
   background: var(--object-color);
 }
@@ -59,11 +56,11 @@
   transition-duration: 250ms;
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-cards--link:hover,
-.portfolio-cards--link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .portfolio-cards__item {
   display: block;
@@ -89,10 +86,12 @@
   transition-property: opacity, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portfolio-cards--link:hover .portfolio-cards__overlay,
-.portfolio-cards--link:focus .portfolio-cards__overlay {
-  opacity: 1;
-  transform: translateY(0%);
+.portfolio-cards__overlay {
+  .portfolio-cards--link:hover &,
+  .portfolio-cards--link:focus & {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 .portfolio-cards__title {
   font-weight: 700;
